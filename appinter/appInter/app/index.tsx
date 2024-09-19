@@ -44,7 +44,7 @@ export default function Button(props) {
           />
         </View>
       </View>
-      <Link style={styles.loginButton} href="..app/inde2.tsx">
+      <Link style={styles.loginButton} href="/inde2">
       <Pressable style={styles.loginButton} onPress={onPress}>
         <Text style={styles.loginButtonText}>Entrar</Text>
         </Pressable>
@@ -89,6 +89,7 @@ const styles = StyleSheet.create({
     color: '#00000',
     fontWeight: 'bold',
     fontSize: 18,
+    alignSelf:'center',
   },
   userInfo: {
     flexDirection: 'row',
@@ -152,14 +153,13 @@ const styles = StyleSheet.create({
     width: '100%',
     paddingVertical: 15,
     borderRadius: 5,
-    alignItems: 'center',
+    textAlign:'center',
     marginBottom: 10,
   },
   loginButtonText: {
     color: '#fff',
     fontWeight: 'bold',
     fontSize: 16,
-    alignItems:'center',
   },
   forgotPassword: {
     color: '#FF6F00',
